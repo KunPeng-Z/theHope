@@ -1,0 +1,246 @@
+/**index.wxss**/
+.flex{
+  display: flex;
+}
+.fl{
+  float:left
+}
+.fr{
+  float: right;
+}
+.clear{
+  color:red;
+}
+.clearfix:after{
+  clear: both;
+  display: block;
+  content: '';
+  height: 0;
+  visibility: hidden;
+}
+//.clearfix:after {
+//  visibility: hidden;
+//  display: block;
+//  font-size: 0;
+//  content: " ";
+//  clear: both;
+//  height: 0;
+//}
+
+
+.header{
+  width :750rpx;
+  min-height :491rpx;
+  background-color :#4b79dc;
+  color: #fff;
+  overflow: hidden;
+}
+.header-main{
+  width: 620rpx;
+  margin: 0 auto;
+}
+.header-title{
+  font-size:40rpx;
+  margin-top: 40rpx;
+  min-height: 40rpx;
+}
+.header-content{
+  font-size:30rpx;
+  margin-top: 25rpx;
+  line-height: 36rpx;
+  width: 620rpx;
+  overflow: hidden;
+  min-height: 400rpx;
+  max-height: 590rpx;
+}
+.header-button{
+  width: 255rpx;
+  height: 72rpx;
+  border: 2px solid #fff;
+  border-radius: 36rpx;
+  text-align: center;
+  line-height: 72rpx;
+  font-size:32rpx;
+  margin: 70rpx auto 40rpx auto;
+}
+
+.viewpoint{
+  margin-top: 53rpx;
+  margin-left: 45rpx;
+  width: 705rpx;
+  overflow: hidden;
+}
+.viewpoint-title{
+  font-size: 36rpx;
+}
+.viewpoint-outer{
+  height: 215rpx;
+  width: 700rpx;
+  margin-top: 20rpx;
+
+}
+.viewpoint-main{
+  height: 215rpx;
+  width: 1800rpx;
+  //overflow-x: scroll;
+}
+.viewpoint-item{
+  display: inline-block;
+  //margin-top: 10rpx;
+  width: 360rpx;
+  height: 200rpx;
+  //border: 1px solid #6e6e6e;
+  box-shadow: 5rpx 5rpx 10rpx #888888;
+  border-radius: 12rpx;
+  overflow: hidden;
+  margin-right: 40rpx;
+  .user{
+    .avatar{
+      width: 70rpx;
+      height:70rpx;
+      border-radius: 50%;
+      margin-top: 12rpx;
+    }
+    .info{
+      font-size: 24rpx;
+      margin-top: 14rpx;
+      margin-left: 8rpx;
+      .name{
+        color: #3d3d3d;
+      }
+      .time{
+        color: #797979;
+      }
+    }
+    .agree{
+      .num{
+        color:#818181;
+        font-size: 24rpx;
+      }
+      .icon{
+        margin: 0 20rpx;
+        width: 29rpx;
+        height: 29rpx;
+      }
+    }
+
+  }
+  .content{
+    width: 310rpx;
+    height: 100rpx;
+    font-size:20rpx;
+    line-height: 24rpx;
+    color: #515151;
+    overflow: hidden;
+    margin: 16rpx 0 0 25rpx;
+  }
+}
+
+.color-red{
+  color:#f77373
+}
+.color-blue{
+  color:#73a2f7
+}
+.vote{
+  width: 650rpx;
+  margin: 85rpx auto 0 auto;
+  .title{
+    margin-bottom: 35rpx;
+    font-size:40rpx;
+  }
+  .main{
+    display: flex;
+    justify-content: space-between;
+    font-size:24rpx;
+    line-height: 30rpx;
+  }
+
+  .agree{
+    width: 260rpx;
+    height: 270rpx;
+    border-right: 1px solid #e7e7e7;
+    padding-right: 50rpx;
+
+  }
+  .disgaree{
+    width: 260rpx;
+    height: 270rpx;
+    .button{
+      background-color: #204a89;
+    }
+  }
+  .button{
+    width: 178rpx;
+    height: 48rpx;
+    color: #fff;
+    font-size:22rpx;
+    line-height: 48rpx;
+    text-align: center;
+    background-color: #ff6969;
+    margin: 80rpx auto 0 auto;
+    border-radius: 24rpx;
+
+  }
+  .progress{
+    margin: 50rpx 0 0 0;
+    width: 640rpx;
+    height: 20rpx;
+    background-color: #204a89;
+  }
+  .progress-percent{
+    background-color: #ff6969;
+    height: 20rpx;
+  }
+}
+
+.comment{
+  width: 650rpx;
+  margin: 85rpx auto 0 auto;
+  .title{
+    font-size: 40rpx;
+  }
+  .comment-item {
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 20rpx;
+    margin-top: 10rpx;
+  }
+  .main{
+    margin-top: 30rpx;
+    .avatar{
+      width: 70rpx;
+      height:70rpx;
+      border-radius: 50%;
+      margin-top: 12rpx;
+    }
+    .info{
+      font-size: 30rpx;
+      margin-top: 8rpx;
+      margin-left: 8rpx;
+
+      .name{
+        color: #204a89;
+      }
+      .time{
+        font-size:20rpx;
+        color: #797979;
+      }
+    }
+    .agree{
+      position: absolute;
+      right: 0;
+      bottom: 20rpx;
+      .num{
+        color:#818181;
+        font-size: 24rpx;
+      }
+      .icon{
+        margin: 0 20rpx;
+        width: 29rpx;
+        height: 29rpx;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,91 @@
+<!--index.wxml-->
+
+
+<view class="header">
+    <view class="header-main">
+        <view class="header-title">{{articleData.title}}</view>
+        <view class="header-content">
+            {{articleData.markdown}}
+        </view>
+        <view class="header-button">事件全貌</view>
+    </view>
+</view>
+
+<view class="viewpoint">
+    <view class="viewpoint-title">
+        观点聚焦
+    </view>
+
+    <scroll-view scroll-x="true" class="viewpoint-outer clearfix">
+        <view class="viewpoint-main" style="width:{{viewData.length * 400}}rpx">
+            <view class="viewpoint-item fl" wx:for="{{viewData}}" wx:key="name" wx:for-item="item">
+
+                <viwe class="user clearfix">
+                    <image class="avatar fl" src="{{item.avatar}}"></image>
+                    <view class="info fl">
+                        <view class="time">{{item.time}}分钟前</view>
+                        <view class="name">{{item.name}}</view>
+                    </view>
+
+                    <view class="agree fr">
+                        <text class="num">{{item.agree}}</text>
+                        <image class="icon"
+                               src="../image/agree.png"></image>
+                    </view>
+                </viwe>
+
+                <view class="content">
+                    {{item.content}}
+                </view>
+
+            </view>
+        </view>
+
+    </scroll-view>
+</view>
+
+<view class="vote">
+    <view class="title">父母应该为子女买房吗？</view>
+    <view class="main">
+        <view class="agree">
+            <view class="content">
+                <text class="color-red">正方：</text>
+                父母没有这责任和义乌，但买房不易，在能力范围内分担压力不为过。
+            </view>
+            <view class="button">应该</view>
+        </view>
+        <view class="line"></view>
+        <view class="disgaree">
+            <view class="content">
+                <text class="color-blue">反方：</text>
+                父母没有这责任和义乌，但买房不易，在能力范围内分担压力不为过。
+            </view>
+            <view class="button">不应该</view>
+        </view>
+    </view>
+    <view class="progress">
+        <view class="progress-percent" style="width: 60%"></view>
+    </view>
+
+</view>
+
+<view class="comment">
+    <view class="title">观点</view>
+    <view class="main">
+        <view class="comment-item flex" wx:for="{{viewData}}" wx:for-key="*this" wx:for-item="item">
+            <image class="avatar" src="https://s10.mogucdn.com/mlcdn/c45406/180806_3e6bkh3h9b8h8he9f0i8f2c3238a6_400x300.jpg"></image>
+            <view class="info">
+                <view class="name">123</view>
+                <view class="content">123</view>
+                <view class="time">11分钟前</view>
+            </view>
+            <view class="agree fr">
+                <text class="num">{{item.agree}}</text>
+                <image class="icon"
+                       src="../image/agree.png"></image>
+            </view>
+        </view>
+    </view>
+
+
+</view>
